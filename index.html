@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Login</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function login(event){
+            event.preventDefault();
+            const usuario = document.querySelector('input[type="text"]').value.trim();
+            if (usuario === "lucasscesar7@gmail.com") {
+                window.location.href = "carteira2.html";
+            } else if (usuario === "jpp_cordeiro@hotmail.com") {
+                window.location.href = "carteira1.html";
+            } else {
+                alert("Usuário não reconhecido.");
+            }
+        }
+</script>
+    <style>
+        .logos {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .logos img {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <form onsubmit="login(event)">
+            <div class="logos">
+                <img src="https://uspdigital.usp.br/comumwebdev/imagens/cabecalho/usp-logo.png" width="122" height="49" alt="" border="0" style="position: relative; top: -3px;">
+            </div>
+            <h2>Universidade São Paulo</h2>
+            <input type="text" placeholder="Usuário" required>
+            <input type="password" placeholder="Senha" required>
+            <button type="submit">Entrar</button>
+        </form>
+    </div>
+</body>
+</html>

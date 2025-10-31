@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carteira Estudantil Digital</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f15500;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .carteira {
+            background-color: #f4f7f6;
+            max-width: 360px;
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            text-align: center;
+            padding: 20px;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header img {
+            width: 90px;
+        }
+        .foto-qr {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 15px 0;
+        }
+        .foto-perfil {
+            width: 110px;
+            height: 110px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .qr-code {
+            width: 110px;
+            height: 110px;
+        }
+        .codigo {
+            font-size: 12px;
+            color: #333;
+            margin-top: 5px;
+        }
+        .info {
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 10px;
+            text-align: left;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+        .info strong {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .footer {
+            margin-top: 15px;
+        }
+        .footer img {
+            width: 90px;
+        }
+    </style>
+</head>
+<body>
+    <div class="carteira">
+        <div class="header">
+            <img src="https://uspdigital.usp.br/comumwebdev/imagens/cabecalho/usp-logo.png" alt="DNE">
+            <img src="https://uspdigital.usp.br/comumwebdev/imagens/cabecalho/usp-logo-texto.png" alt="União dos Estudantes">
+        </div>
+
+        <div class="foto-qr">
+            <img class="foto-perfil" src="Imagem_do_WhatsApp_de_2025-07-19_à_s__16.35.15_d4c2a5f2-removebg-preview.jpeg" alt="Foto Perfil">
+            <img class="qr-code" src="https://codigosdebarrasbrasil.com.br/wp-content/uploads/2019/09/codigo_qr-300x300.png" alt="QR Code">
+        </div>
+
+        <div class="codigo">Cód. uso 2025.1845.7462</div>
+
+        <div class="info">
+            <strong>João Pedro Pereira Cordeiro</strong>
+            Inst. de Ensino: Universidade São Paulo<br>
+            Curso: Gestão Ambiental<br>
+            Nível de Ensino: Superior<br>
+            CPF: 464.897.678-99<br>
+            Data de nasc.: 22/04/1998<br>
+            Matrícula: 1465447<br>
+            Validade: Março de 2026
+        </div>
+
+        <div class="footer">
+            <img src=""Logo União dos Estudantes">
+        </div>
+    </div>
+</body>
+</html>
